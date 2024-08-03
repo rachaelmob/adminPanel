@@ -17,6 +17,7 @@ class User extends Authenticatable
      * @var array<int, string>
      */
     protected $fillable = [
+        'role', //fillable? create function?
         'name',
         'email',
         'password',
@@ -44,4 +45,12 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+
+    // public static function roles()
+    // {
+    //     return [
+    //         'admin' => 'Admin',
+    //         'user' => 'User',
+    //     ];
+    // }
 }
