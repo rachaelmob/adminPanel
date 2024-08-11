@@ -24,7 +24,7 @@ class CompanyFactory extends Factory
         return [
             'name' => $this->faker->company,
             'email' => $this->faker->unique()->companyEmail,
-            'logo' => null, // You can add logic to store a dummy image if needed
+            'logo' => 'logos/DWLPc2VHeWQLD1aPOThJuuGlYZpybRIEyHopSoY6.png', //null, // You can add logic to store a dummy image if needed
             'website' => $this->faker->url,
         ];
     }

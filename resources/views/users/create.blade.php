@@ -44,9 +44,10 @@
                 <option value="admin">Admin</option>
             </select>
         </div>
-
+    @isAdmin
         <button type="submit" class="btn btn-primary">Create</button>
         <a href="{{ route('users.index') }}" class="btn btn-secondary">Cancel</a>
+    @endisAdmin
     </form>
 </div>
 @endsection
